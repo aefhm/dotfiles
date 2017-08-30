@@ -1,2 +1,2 @@
 set number
-set expandtab ts=2 ws=2
+set expandtab ts=2 sw=2
