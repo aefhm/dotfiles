@@ -1,1 +1,2 @@
-# dotfiles
+# Neovim
+~/.config/nvim/init.vim
