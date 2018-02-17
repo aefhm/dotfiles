@@ -1,2 +1,1 @@
-# Neovim
-~/.config/nvim/init.vim
+`sh install.sh`
