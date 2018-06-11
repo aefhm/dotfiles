@@ -1,0 +1,7 @@
+[user]
+  name = Xi Zhang
+  
+[alias]
+  co = checkout
+  ci = commit
+  st = status
