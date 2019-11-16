@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  tasks:
+  - name: fetch homebrew installer
+    get_url: url=https://raw.github.com/Homebrew/install/master/install dest=/tmp/install_brew.rb
+
+  - name: run homebrew installer
+    command: ruby /tmp/install_brew.rb creates=/usr/local/bin/brew
+
+  - name: doctor homebrew
+    command: brew doctor
+
+  - name: update homebrew
+    command: brew update
+
+  - homebrew: name=tmux
+
+  - homebrew: name=neovim
+  
+  - name: Install Google Chrome
+    homebrew_cask: name=google-chrome state=present
+
+  - name: Install Skype
+    homebrew_cask: name=skype state=present
