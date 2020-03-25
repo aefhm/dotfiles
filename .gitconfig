@@ -1,6 +1,10 @@
 [user]
   name = Xi Zhang
-  
+  email = // update this
+
+[commit]
+  gpgsign = true
+
 [alias]
   co = checkout
   ci = commit
