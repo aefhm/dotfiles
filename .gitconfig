@@ -9,3 +9,6 @@
   co = checkout
   ci = commit
   st = status
+
+[merge]
+        conflictstyle = diff3
