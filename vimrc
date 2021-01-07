@@ -6,6 +6,5 @@ set tabstop=2
 syntax on
 set noswapfile
 set hlsearch
-set ignorecase
 set incsearch
 set guicursor= "GNOME emulator workaround"
