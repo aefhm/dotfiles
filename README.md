@@ -16,11 +16,6 @@ set hostname
 sudo scutil --set HostName
 ```
 
-list node packages
-```
-npm ls -g --depth=0 --link=true
-```
-
 reload gpg
 ```
 gpg-connect-agent reloadagent /bye
