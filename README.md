@@ -1,6 +1,6 @@
 ## README
 
-To install, run `sh install.sh`.
+To install, run `make`.
 
 ### MISC
 
