@@ -1,3 +1,5 @@
+all: nvim tmux git zshell
+
 nvim:
 	mkdir ~/.config
 	mkdir ~/.config/nvim
