@@ -1,7 +1,9 @@
-all: nvim tmux git zshell
+all: config nvim tmux git zshell
+
+config:
+	mkdir ~/.config
 
 nvim:
-	mkdir ~/.config
 	mkdir ~/.config/nvim
 	cp vimrc ~/.config/nvim/init.vim
 
@@ -10,6 +12,7 @@ tmux:
 
 git:
 	cp .gitconfig ~/
+	cp .gitignore ~/.config
 
 zshell:
 	cp .zshenv ~/
