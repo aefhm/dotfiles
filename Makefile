@@ -1,4 +1,7 @@
-all: config nvim git zshell
+all: config nvim brew git zshell
+
+brew:
+	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 config:
 	mkdir ~/.config
