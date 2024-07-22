@@ -2,14 +2,16 @@
 
 To install, run `make`.
 
-### MISC
+### Set Up
 
-set hostname
-```
+#### Set Machine Name
+
+```sh
 sudo scutil --set HostName
 ```
 
-reload gpg
-```
-gpg-connect-agent reloadagent /bye
+#### Generate and Upload SSH key
+
+```sh
+ssh-keygen -t ed25519 -C ""
 ```
