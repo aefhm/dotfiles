@@ -6,9 +6,8 @@ brew:
 config:
 	mkdir ~/.config
 
-nvim:
-	mkdir ~/.config/nvim
-	cp vimrc ~/.config/nvim/init.vim
+nvim: config
+	cp -r nvim ~/.config
 
 git:
 	cp .gitconfig ~/
