@@ -1,3 +1,11 @@
+-- Neovim config
+vim.o.number = true
+vim.o.numberwidth = 1
+vim.o.expandtab = true
+vim.o.ts=2 sw=2
+vim.o.tabstop=2
+vim.cmd('syntax enable')
+
 -- LSP configuration
 local lspconfig = require('lspconfig')
 

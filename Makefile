@@ -4,9 +4,12 @@ brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 config:
-	mkdir ~/.config
+	mkdir -p ~/.config
 
-nvim: config
+lsp-config:
+	git clone https://github.com/neovim/nvim-lspconfig ~/.config/nvim/pack/nvim/start/nvim-lspconfig
+
+nvim: config lsp-config
 	cp -r nvim ~/.config
 
 git:
