@@ -1,4 +1,4 @@
-all: config nvim brew git zshell
+all: config brew git nvim zshell gpg
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -11,6 +11,10 @@ lsp-config:
 
 nvim: config lsp-config
 	cp -r nvim ~/.config
+	brew install neovim
+
+gpg:
+	brew install gpg
 
 git:
 	cp .gitconfig ~/

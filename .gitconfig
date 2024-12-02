@@ -16,5 +16,11 @@
 [pull]
   ff = only
 
+[gpg]
+  program = gpg
+
+[credential]
+  helper = store
+
 [core]
   excludesfile = ~/.config/.gitignore
