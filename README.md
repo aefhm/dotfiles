@@ -1,6 +1,6 @@
 ## README
 
-Probably install XCode.
+Probably install Xcode.
 
 ```sh
 mkdir ~/code
