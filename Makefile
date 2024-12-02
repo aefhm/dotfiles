@@ -17,4 +17,4 @@ git:
 	cp .gitignore ~/.config
 
 zshell:
-	cp .zshenv ~/
+	cp .zprofile ~/
