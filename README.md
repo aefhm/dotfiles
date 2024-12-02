@@ -1,5 +1,11 @@
 ## README
 
+```sh
+mkdir ~/code
+```
+
+Clone this repo there.
+
 To install, run `make`.
 
 ### Set Up
