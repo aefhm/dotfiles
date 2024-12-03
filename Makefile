@@ -1,4 +1,4 @@
-all: config brew git nvim zshell gpg
+all: config brew git nvim zsh gpg
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -21,5 +21,6 @@ git:
 	cp .gitconfig ~/
 	cp .gitignore ~/.config
 
-zshell:
+zsh:
 	cp .zprofile ~/
+	cp .zshrc ~/
