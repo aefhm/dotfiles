@@ -14,6 +14,7 @@ nvim: config lsp-config
 	brew install neovim
 
 gpg:
+	cp -r gpg-agent.conf ~/.gnupg
 	brew install gpg
 
 git:
