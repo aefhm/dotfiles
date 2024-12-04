@@ -1,7 +1,10 @@
-all: config brew git nvim zsh gpg
+all: config brew cli git nvim zsh gpg
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+cli:
+	brew install ripgrep
 
 config:
 	mkdir -p ~/.config
