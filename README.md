@@ -23,3 +23,7 @@ sudo scutil --set HostName
 ```sh
 ssh-keygen -t ed25519 -C ""
 ```
+
+### Env Management
+
+`nvm` and `rbenv`
