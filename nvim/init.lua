@@ -10,9 +10,10 @@ vim.cmd('syntax enable')
 local lspconfig = require('lspconfig')
 
 -- Configure servers
+lspconfig.gopls.setup{}
 lspconfig.pyright.setup{}
-lspconfig.ts_ls.setup{}
 lspconfig.rust_analyzer.setup{}
+lspconfig.ts_ls.setup{}
 -- Add more servers as needed
 
 -- Global mappings
