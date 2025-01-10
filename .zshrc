@@ -1,6 +1,6 @@
 alias vim='nvim'
 
 export GPG_TTY=$(tty)
-gpgconf --launch gpg-agent
+export PATH=$PATH:$HOME/bin
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
