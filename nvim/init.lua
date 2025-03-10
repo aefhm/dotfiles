@@ -1,4 +1,11 @@
 -- Neovim config
+vim.api.nvim_create_autocmd("ColorScheme", {
+	pattern = "*",
+	callback = function()
+    vim.api.nvim_set_hl(0, "ColorColumn", { bg = "LightGray" })
+	end,
+})
+vim.o.colorcolumn = "80"
 vim.o.number = true
 vim.o.numberwidth = 1
 vim.o.expandtab = true
