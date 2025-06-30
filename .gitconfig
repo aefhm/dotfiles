@@ -23,4 +23,5 @@
   helper = store
 
 [core]
+  editor = hx
   excludesfile = ~/.config/.gitignore

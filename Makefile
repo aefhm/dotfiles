@@ -1,4 +1,4 @@
-all: config brew cli git nvim nvm zsh gpg
+all: config brew cli git helix nvm zsh gpg
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -9,12 +9,6 @@ cli: brew
 config:
 	mkdir -p ~/.config
 
-lsp-config: nvim
-	git clone https://github.com/neovim/nvim-lspconfig ~/.config/nvim/pack/nvim/start/nvim-lspconfig
-
-nvim: config
-	cp -r nvim ~/.config
-	brew install neovim
 
 nvm:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
@@ -26,6 +20,10 @@ gpg: brew
 git:
 	cp .gitconfig ~/
 	cp .gitignore ~/.config
+
+helix: brew config
+	cp -r helix ~/.config
+	brew install helix
 
 zsh:
 	cp .zprofile ~/
