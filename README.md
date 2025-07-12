@@ -1,29 +1,27 @@
-## README
+## Xi's Dotfiles
 
-Probably install Xcode.
+Development environment for macOS with Helix editor optimized for writing.
 
-```sh
-mkdir ~/code
+### Included
+- Helix (soft wrap, markdown LSP)
+- Git (GPG signing, aliases)
+- Zsh (completion, aliases)
+- CLI tools (ripgrep, gh, marksman)
+
+### Installation
+
+```bash
+mkdir -p ~/code && cd ~/code
+git clone https://github.com/aefhm/dotfiles.git && cd dotfiles
+make
 ```
 
-Clone this repo there.
-
-To install, run `make`.
-
-### Set Up
-
-**Set Machine Name**
-
-```sh
-sudo scutil --set HostName
+**Post-install:**
+```bash
+sudo scutil --set HostName your-machine-name
+ssh-keygen -t ed25519 -C "info@xizhang.page"
 ```
 
-**Generate and Upload SSH key**
-
-```sh
-ssh-keygen -t ed25519 -C ""
-```
-
-### Env Management
-
-`nvm` and `rbenv`
+### Requirements
+- macOS with Xcode CLI tools
+- Overwrites existing configs in `~/` and `~/.config/`
