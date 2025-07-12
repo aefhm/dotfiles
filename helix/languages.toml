@@ -5,15 +5,11 @@ name = "markdown"
 soft-wrap.enable = true
 text-width = 80
 soft-wrap.wrap-at-text-width = true
-language-servers = ["marksman"]
 
 [[language]]
 name = "text"
+scope = "source.txt"
+file-types = ["txt"]
 soft-wrap.enable = true
 text-width = 80
 soft-wrap.wrap-at-text-width = true
-
-# Language server configuration
-[language-server.marksman]
-command = "marksman"
-args = ["server"]
