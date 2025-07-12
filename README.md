@@ -3,10 +3,10 @@
 Development environment for macOS with Helix editor optimized for writing.
 
 ### Included
-- Helix (soft wrap, markdown LSP)
+- [Helix](https://helix-editor.com) (soft wrap, markdown LSP)
 - Git (GPG signing, aliases)
 - Zsh (completion, aliases)
-- CLI tools (ripgrep, gh, marksman)
+- CLI tools ([ripgrep](https://github.com/BurntSushi/ripgrep), [gh](https://cli.github.com), [marksman](https://github.com/artempyanykh/marksman))
 
 ### Installation
 
