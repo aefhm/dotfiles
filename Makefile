@@ -4,7 +4,7 @@ brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 cli: brew
-	brew install ripgrep
+	brew install ripgrep gh
 
 config:
 	mkdir -p ~/.config
