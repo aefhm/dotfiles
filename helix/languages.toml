@@ -13,3 +13,18 @@ file-types = ["txt"]
 soft-wrap.enable = true
 text-width = 80
 soft-wrap.wrap-at-text-width = true
+
+[[language]]
+name = "python"
+language-servers = [ "ruff" ]
+auto-format = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[[language]]
+name = "html"
+soft-wrap.enable = true
+text-width = 80
+soft-wrap.wrap-at-text-width = true

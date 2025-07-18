@@ -4,7 +4,7 @@ brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 cli: brew
-	brew install ripgrep gh marksman
+	brew install ripgrep gh marksman superhtml
 
 config:
 	mkdir -p ~/.config
