@@ -1,4 +1,4 @@
-all: config brew cli git helix nvm zsh gpg
+all: config brew cli git helix nvm zsh gpg rust
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -27,3 +27,7 @@ helix: brew config
 zsh:
 	cp -n .zprofile ~/
 	cp -n .zshrc ~/
+
+rust:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	rustup component add rust-analyzer
