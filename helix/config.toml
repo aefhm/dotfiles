@@ -1,7 +1,7 @@
 theme = "sidra"
 
 [editor]
-line-number = "relative"
+line-number = "absolute"
 cursorline = true
 scrolloff = 5
 
