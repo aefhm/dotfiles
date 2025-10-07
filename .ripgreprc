@@ -1,0 +1,29 @@
+# Ripgrep configuration
+# https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md
+
+# Smart case search (case-insensitive if all lowercase)
+--smart-case
+
+# Search hidden files/directories
+--hidden
+
+# Exclude common directories
+--glob=!.git/*
+--glob=!node_modules/*
+--glob=!.venv/*
+--glob=!__pycache__/*
+--glob=!*.pyc
+--glob=!.ruff_cache/*
+--glob=!target/*
+--glob=!build/*
+--glob=!dist/*
+
+# Display settings
+--max-columns=150
+--max-columns-preview
+
+# Colors
+--colors=line:fg:yellow
+--colors=path:fg:green
+--colors=match:fg:red
+--colors=match:style:bold

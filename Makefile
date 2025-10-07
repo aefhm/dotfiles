@@ -27,6 +27,7 @@ helix: brew config
 zsh:
 	cp -n .zprofile ~/
 	cp -n .zshrc ~/
+	cp -n .ripgreprc ~/
 
 rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
