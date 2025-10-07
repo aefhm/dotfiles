@@ -3,15 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>BackgroundBlur</key>
-	<real>0.0</real>
+	<real>0.14999999999999999</real>
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
-	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxAREldO
-	U1doaXRlXE5TQ29sb3JTcGFjZVYkY2xhc3NNMCAwLjg1MDAwMDAyABADgALSFBUWF1ok
-	Y2xhc3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1dd
-	ZGx5gI6Qkpeiq7O2AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAL8=
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwVGSBVJG51bGzUDQ4PEBES
+	ExRXTlNXaGl0ZVxOU0NvbG9yU3BhY2VfEBJOU0N1c3RvbUNvbG9yU3BhY2VWJGNsYXNz
+	RjAgMC45ABADgAKABNIWEBcYVE5TSUQQAoAD0hobHB1aJGNsYXNzbmFtZVgkY2xhc3Nl
+	c1xOU0NvbG9yU3BhY2WiHh9cTlNDb2xvclNwYWNlWE5TT2JqZWN00hobISJXTlNDb2xv
+	cqIhHwAIABEAGgAkACkAMgA3AEkATABRAFMAWQBfAGgAcAB9AJIAmQCgAKIApACmAKsA
+	sACyALQAuQDEAM0A2gDdAOoA8wD4AQAAAAAAAAACAQAAAAAAAAAjAAAAAAAAAAAAAAAA
+	AAABAw==
 	</data>
+	<key>BackgroundSettingsForInactiveWindows</key>
+	<false/>
+	<key>Bell</key>
+	<false/>
 	<key>CursorColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -20,6 +27,8 @@
 	YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2JqZWN0CBEaJCkyN0lMUVNXXWRs
 	eYCMjpCVoKmxtAAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAC9
 	</data>
+	<key>CursorType</key>
+	<integer>0</integer>
 	<key>Font</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -34,7 +43,7 @@
 	<key>FontWidthSpacing</key>
 	<real>0.99596774193548387</real>
 	<key>ProfileCurrentVersion</key>
-	<real>2.0699999999999998</real>
+	<real>2.0899999999999999</real>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -64,10 +73,12 @@
 	<key>UseBrightBold</key>
 	<true/>
 	<key>name</key>
-	<string>Pro</string>
+	<string>Xi</string>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>
 	<string>Window Settings</string>
+	<key>useOptionAsMetaKey</key>
+	<true/>
 </dict>
 </plist>
