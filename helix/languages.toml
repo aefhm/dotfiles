@@ -16,12 +16,13 @@ soft-wrap.wrap-at-text-width = true
 
 [[language]]
 name = "python"
-language-servers = [ "ruff" ]
-auto-format = true
+language-servers = ["pyright", "ruff"]  # Pyright first for renaming/navigation
+formatter = { command = "ruff", args = ["format", "-"] }
 
-[language-server.ruff]
-command = "ruff"
-args = ["server"]
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+config = { python = { venvPath = ".", pythonPath = ".venv/bin/python" } }
 
 [[language]]
 name = "html"
