@@ -21,7 +21,7 @@ git:
 	cp -n .gitignore ~/.config
 
 helix: brew config
-	cp -r helix ~/.config
+	cp -rn helix ~/.config
 	brew install helix
 
 zsh:
