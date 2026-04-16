@@ -1,4 +1,4 @@
-all: config brew cli git helix nvm zsh gpg rust
+all: config brew cli git helix nvm zsh gpg rust claude
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -32,3 +32,8 @@ zsh:
 rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 	rustup component add rust-analyzer
+
+claude: config
+	mkdir -p ~/.config/claude
+	cp -n claude/settings.json ~/.config/claude/
+	cp -n claude/CLAUDE.md ~/.config/claude/
