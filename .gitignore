@@ -1,6 +1,7 @@
 .DS_Store
 .aider*
 .claude/
+.codex/
 .vscode/
 .idea/
 *.swp

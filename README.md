@@ -6,6 +6,7 @@ Development environment for macOS with Helix editor optimized for writing.
 - [Helix](https://helix-editor.com) (soft wrap, markdown LSP)
 - Git (GPG signing, aliases)
 - Zsh (completion, aliases)
+- Codex (global `config.toml` and `AGENTS.md`)
 - CLI tools ([ripgrep](https://github.com/BurntSushi/ripgrep), [gh](https://cli.github.com), [marksman](https://github.com/artempyanykh/marksman))
 
 ### Installation
@@ -24,4 +25,4 @@ ssh-keygen -t ed25519 -C "info@xizhang.page"
 
 ### Requirements
 - macOS with Xcode CLI tools
-- Overwrites existing configs in `~/` and `~/.config/`
+- Copies new configs into `~/`, `~/.config/`, and `~/.codex/` without overwriting existing files

@@ -1,4 +1,6 @@
-all: config brew cli git helix nvm zsh gpg rust claude
+.PHONY: all brew cli config nvm gpg git helix zsh rust claude codex
+
+all: config brew cli git helix nvm zsh gpg rust claude codex
 
 brew:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -37,3 +39,8 @@ claude: config
 	mkdir -p ~/.config/claude
 	cp -n claude/settings.json ~/.config/claude/
 	cp -n claude/CLAUDE.md ~/.config/claude/
+
+codex:
+	mkdir -p ~/.codex
+	cp -n codex/config.toml ~/.codex/
+	cp -n codex/AGENTS.md ~/.codex/
