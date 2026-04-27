@@ -42,5 +42,5 @@ claude: config
 
 codex:
 	mkdir -p ~/.codex
-	cp -n codex/config.toml ~/.codex/
 	cp -n codex/AGENTS.md ~/.codex/
+	cp -n codex/config.toml ~/.codex/
