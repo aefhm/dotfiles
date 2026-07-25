@@ -20,6 +20,8 @@ make
 **Post-install:**
 ```bash
 sudo scutil --set HostName your-machine-name
+sudo scutil --set LocalHostName your-machine-name
+sudo scutil --set ComputerName your-machine-name
 ssh-keygen -t ed25519 -C "info@xizhang.page"
 ```
 

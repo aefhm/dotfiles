@@ -27,7 +27,7 @@ helix: brew config
 	brew install helix
 
 zsh:
-	cp -n .zprofile ~/
+	cp -n .zprofile ~/ || true
 	cp -n .zshrc ~/
 	cp -n .ripgreprc ~/
 
@@ -44,3 +44,6 @@ codex:
 	mkdir -p ~/.codex
 	cp -n codex/AGENTS.md ~/.codex/
 	cp -n codex/config.toml ~/.codex/
+
+pinentry: brew
+	brew install pinentry-mac
