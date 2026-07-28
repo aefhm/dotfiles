@@ -1,4 +1,4 @@
-.PHONY: all brew cli config nvm gpg git helix zsh rust claude codex
+.PHONY: all brew cli config nvm gpg git helix zsh rust claude codex pinentry
 
 all: config brew cli git helix nvm zsh gpg rust claude codex
 
@@ -14,9 +14,11 @@ config:
 nvm:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-gpg: brew
-	cp -rn gpg-agent.conf ~/.gnupg
+gpg: brew pinentry
 	brew install gpg
+	mkdir -p ~/.gnupg
+	cp gpg-agent.conf ~/.gnupg/gpg-agent.conf
+	gpgconf --kill gpg-agent || true
 
 git:
 	cp -n .gitconfig ~/
@@ -47,3 +49,5 @@ codex:
 
 pinentry: brew
 	brew install pinentry-mac
+	defaults write org.gpgtools.common UseKeychain -bool YES
+	defaults write org.gpgtools.common DisableKeychain -bool NO
