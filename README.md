@@ -7,7 +7,7 @@ Development environment for macOS with Helix editor optimized for writing.
 - Git (GPG signing, aliases)
 - Zsh (completion, aliases)
 - Codex (global `config.toml` and `AGENTS.md`)
-- CLI tools ([ripgrep](https://github.com/BurntSushi/ripgrep), [gh](https://cli.github.com), [marksman](https://github.com/artempyanykh/marksman))
+- CLI tools ([ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [gh](https://cli.github.com), [marksman](https://github.com/artempyanykh/marksman))
 
 ### Installation
 
