@@ -3,7 +3,7 @@
 all: config brew cli git helix nvm zsh gpg rust claude codex
 
 brew:
-	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	@command -v brew >/dev/null 2>&1 || bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 cli: brew
 	brew install ripgrep fd gh marksman
