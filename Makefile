@@ -6,7 +6,7 @@ brew:
 	@command -v brew >/dev/null 2>&1 || bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 cli: brew
-	brew install ripgrep fd gh marksman
+	brew install ripgrep fd eza gh marksman
 
 config:
 	mkdir -p ~/.config
