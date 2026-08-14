@@ -21,7 +21,7 @@ gpg: brew pinentry
 	gpgconf --kill gpg-agent || true
 
 git:
-	cp -n .gitconfig ~/
+	test -e ~/.gitconfig || cp .gitconfig ~/
 	cp -n .gitignore ~/.config
 
 helix: brew config
