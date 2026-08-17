@@ -6,3 +6,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Ripgrep config
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+# eza aliases
+alias ll="eza -la --git --group-directories-first"
+alias lt="eza --tree --level=2 --group-directories-first"
